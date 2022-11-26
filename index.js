@@ -10,7 +10,7 @@ console.log(__dirname)
 
 // const img1 = require('./IMAGES/rober-gonzalez-GY_jpyXnKk0-unsplash.jpg');
 
-const indexFile = fs.readFileSync(__dirname + "/public/home.html", "utf-8");
+const indexFile = fs.readFileSync(__dirname + "/public/index.html", "utf-8");
 
 const replaceVal = (tempVal, originalVal) => {
     let temperature = tempVal.replace("{%temp%}", Number.parseInt(originalVal.main.temp) - 273);
